@@ -15,11 +15,15 @@ R > install.packages("Rserve",dest="/usr/lib64/R/library")
 Check that Rserve has been installed properly and could started
 ```bash
 R > library("Rserve")
-Rserve()
+R > Rserve()
 ```
 If Rserve started properly:
+* Create user rserve
+```bash
+adduser rserve
+```
 * Create conf file as /etc/Rserve.conf
-[Rserve.conf](https://github.com/skk2010/hooks/blob/master/Rserve/Rserve.conf)
+[Rserve.conf](https://github.com/skk2010/hooks/blob/master/Rserve/Rserve.conf) DO NOT FORGET to change UID and GID in conf file following your `rserve` user uid and gid
 * Create service file to enable this service in start OS. Create file as /usr/lib/systemd/system/rserve.service
 [rserve.service](https://github.com/skk2010/hooks/blob/master/Rserve/Rserve.conf)
 
