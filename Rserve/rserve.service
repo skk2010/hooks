@@ -6,6 +6,8 @@ Wants=network-online.target
 
 [Service]
 Type=forking
+ExecStartPre=-/usr/bin/mkdir /run/rserve
+ExecStartPre=/usr/bin/chown -R rserve:rserve /run/rserve
 PIDFile=/run/rserve/rserve.pid
 ExecStart=/usr/lib64/R/bin/R CMD /usr/lib64/R/library/Rserve/libs/Rserve --RS-conf /etc/Rserv.conf --no-save
 ExecStop=/bin/kill -s QUIT $MAINPID
