@@ -1,6 +1,10 @@
 
 # Continous Integration and Continous Delivery Rails application into Amazon Cloud.
-Tools: TeamCity, AWS CodeDeploy, Ansible
+*OS*: CentOS 7
+
+*Tools*: TeamCity, AWS CodeDeploy, Ansible
+
+*Environments*: Test, Stage, Production 
 
 ## Description
 This article is not about why we have choosen these kind of tools.
