@@ -15,3 +15,5 @@ The aim of this article is to share my experience.
 2. AWS account - existed. Detailed information - https://aws.amazon.com
 3. TeamCity - installed. Detailed information - https://www.jetbrains.com/teamcity
 
+## How it works
+<img src="Scheme2.png" width="250">
