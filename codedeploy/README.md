@@ -4,7 +4,7 @@
 
 *Tools*: TeamCity, AWS CodeDeploy, Ansible
 
-*Environments*: Test, Stage, Production 
+*Environments*: Test, Production 
 
 ## Description
 This article is not about why we have choosen these kind of tools.
