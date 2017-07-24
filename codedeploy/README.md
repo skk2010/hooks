@@ -38,6 +38,7 @@ Step 4
 <img src="s3_4.PNG" width="250">
 
 Step 5
+
 Let's grant permissions to user under which Temacity will work with Amazon to put application versions to bucket.
 Got to Bucket -> Permissions -> Bucket Policy and add to Bucket policy editor this json:
 ```json
