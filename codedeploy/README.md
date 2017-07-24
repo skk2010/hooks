@@ -21,7 +21,7 @@ The aim of this article is to share my experience.
 ## Configuring AWS
 ### Configuring IAM
 #### Creating new Roles and Polices
-##### Step 1
+##### Step 1. New policy.
 Create new policy to grant access Temacity user to S3 bucket.
 Go to Create Policy -> Create Your Own Policy
 
@@ -44,15 +44,14 @@ There is a code of policy:
 ```
 
 #### Creating new User for Teamcity
-##### Step 1
+##### Step 1. New User.
 http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
-##### Step 2
+##### Step 2. Access key.
 For Teamcity configuration we need to have Access key. Let's create it. **Do not forget to copy it!**
 
 http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 
-##### Step 3
-Assign Polices
+##### Step 3. Assign Polices.
 List Polices should be assigned:
 * AmazonEC2FullAccess
 * AWSCodeDeployDeployerAccess
