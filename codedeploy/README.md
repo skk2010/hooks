@@ -22,16 +22,16 @@ The aim of this article is to share my experience.
 ### Configuring IAM
 ### Configuring S3
 Step 1
-<img src="s3_1.png" width="250">
+<img src="s3_1.PNG" width="250">
 
 Step 2
-<img src="s3_2.png" width="250">
+<img src="s3_2.PNG" width="250">
 
 Step 3
-<img src="s3_3.png" width="250">
+<img src="s3_3.PNG" width="250">
 
 Step 4
-<img src="s3_4.png" width="250">
+<img src="s3_4.PNG" width="250">
 
 Step 5
 Let's grant permissions to user under which Temacity will work with Amazon to put application versions to bucket.
