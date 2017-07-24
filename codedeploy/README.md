@@ -20,24 +20,26 @@ The aim of this article is to share my experience.
 
 ## Configuring AWS
 ### Configuring IAM
+#### Creating new Roles
+
 ### Configuring S3
-Step 1
+#### Step 1
 
 <img src="s3_1.PNG" width="250">
 
-Step 2
+#### Step 2
 
 <img src="s3_2.PNG" width="250">
 
-Step 3
+#### Step 3
 
 <img src="s3_3.PNG" width="250">
 
-Step 4
+#### Step 4
 
 <img src="s3_4.PNG" width="250">
 
-Step 5
+#### Step 5
 
 Let's grant permissions to user under which Temacity will work with Amazon to put application versions to bucket.
 Got to Bucket -> Permissions -> Bucket Policy and add to Bucket policy editor this json:
