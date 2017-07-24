@@ -26,7 +26,7 @@ Create new policy to grant access Temacity user to S3 bucket.
 Go to Create Policy -> Create Your Own Policy
 
 <img src="Policy_1.PNG" width="250">
-There is a code of policy
+There is a code of policy:
 
 ```json
 {
@@ -43,7 +43,6 @@ There is a code of policy
 }
 ```
 
-
 #### Creating new User for Teamcity
 ##### Step 1
 http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
@@ -51,6 +50,13 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
 For Teamcity configuration we need to have Access key. Let's create it. **Do not forget to copy it!**
 
 http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
+
+##### Step 3
+Assign Polices
+List Polices should be assigned:
+* AmazonEC2FullAccess
+* AWSCodeDeployDeployerAccess
+* Your policy created in Step 1 (Creating new Roles and Polices)
 
 ### Configuring S3
 #### Step 1
