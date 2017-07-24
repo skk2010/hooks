@@ -17,3 +17,62 @@ The aim of this article is to share my experience.
 
 ## How it works
 <img src="Scheme2.png" width="250">
+
+## Configuring AWS
+### Configuring IAM
+### Configuring S3
+Step 1
+<img src="s3_1.png" width="250">
+
+Step 2
+<img src="s3_2.png" width="250">
+
+Step 3
+<img src="s3_3.png" width="250">
+
+Step 4
+<img src="s3_4.png" width="250">
+
+Step 5
+Let's grant permissions to user under which Temacity will work with Amazon to put application versions to bucket.
+Got to Bucket -> Permissions -> Bucket Policy and add to Bucket policy editor this json:
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::470578543754:user/_your_teamcity_user"
+            },
+            "Action": [
+                "s3:GetBucketWebsite",
+                "s3:GetLifecycleConfiguration",
+                "s3:GetObject",
+                "s3:GetObjectAcl",
+                "s3:GetObjectTagging",
+                "s3:GetObjectTorrent",
+                "s3:GetObjectVersion",
+                "s3:GetObjectVersionAcl",
+                "s3:GetObjectVersionTagging",
+                "s3:GetObjectVersionTorrent",
+                "s3:GetReplicationConfiguration",
+                "s3:ListBucket",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListBucketVersions",
+                "s3:ListMultipartUploadParts",
+                "s3:PutObject",
+                "s3:PutObjectTagging",
+                "s3:PutObjectVersionAcl",
+                "s3:PutObjectVersionTagging"
+            ],
+            "Resource": [
+                "arn:aws:s3:::_your_s3_basket_name/*",
+                "arn:aws:s3:::_your_s3_basket_name"
+            ]
+        }
+    ]
+}
+```
+### Configuring CodeDeploy
+
