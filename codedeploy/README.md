@@ -21,6 +21,13 @@ The aim of this article is to share my experience.
 ## Configuring AWS
 ### Configuring IAM
 #### Creating new Roles
+#### Creating new User for Teamcity
+##### Step 1
+http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
+##### Step 2
+For Teamcity configuration we need to have Access key. Let's create it. **Do not forget to copy it!**
+
+http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 
 ### Configuring S3
 #### Step 1
