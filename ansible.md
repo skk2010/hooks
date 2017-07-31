@@ -1,7 +1,7 @@
 # Ansible roles and playbooks
 ## Changing multiple configuration files
 
-```
+```yml
 - name: Change each file over that matches the given pattern
   lineinfile:
     path: "{{ item }}"
