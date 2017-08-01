@@ -4,7 +4,7 @@
 ```yml
 - name: Change each file over that matches the given pattern
   lineinfile:
-    path: "\{{item\}}"
+    path: "&lcub;&lcub;item\}}"
     state: present
     regexp: '^pid\.1\='
     line: 'pid.1=test'
