@@ -11,3 +11,6 @@ We will configure [Gitlab runner](https://docs.gitlab.com/runner/install/kuberne
 ## Pipeline
 
 <img src="oc-gitlab-ci-molecule.png" width="250">
+
+
+<script src="https://gist.github.com/skk2010/35bda10797891270668ab4e39bdd1047.js"></script>
