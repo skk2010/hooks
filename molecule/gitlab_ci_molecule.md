@@ -7,3 +7,7 @@ Our infrastracture for CI is:
 
 We will configure [Gitlab runner](https://docs.gitlab.com/runner/install/kubernetes.html) to test ansible roles with [molecule](https://molecule.readthedocs.io). If you don't know [molecule](https://molecule.readthedocs.io) please read documentation [there](https://molecule.readthedocs.io).  
 [Molecule](https://molecule.readthedocs.io) is able to use Docker for testing Ansible roles and that's what we needed.  
+
+## Pipeline
+
+<img src="oc-gitlab-ci-molecule.png" width="250">
