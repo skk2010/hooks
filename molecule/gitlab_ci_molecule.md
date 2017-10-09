@@ -12,5 +12,24 @@ We will configure [Gitlab runner](https://docs.gitlab.com/runner/install/kuberne
 
 <img src="oc-gitlab-ci-molecule.png" width="250">
 
+## Set everything up
+
+### Openshift
+
+#### Create new project 
+
+Openshift Web Console -> New project
+
+<img src="NewProject.PNG" width="250">
+
+Upload new Template
+
+Openshift Web Console -> Gitlab-ci -> Add to Project -> Import YAML/JSON
+
+Insert template:
 
 <script src="https://gist.github.com/skk2010/35bda10797891270668ab4e39bdd1047.js"></script>
+
+
+
+`oc adm policy add-scc-to-user privileged <user>`
