@@ -16,13 +16,13 @@ We will configure [Gitlab runner](https://docs.gitlab.com/runner/install/kuberne
 
 ### Openshift
 
-#### Create new project 
+#### Create new project  
 
 Openshift Web Console -> New project
 
 <img src="NewProject.PNG" width="250">
 
-Upload new Template
+#### Upload new Template  
 
 Openshift Web Console -> Gitlab-ci -> Add to Project -> Import YAML/JSON
 
